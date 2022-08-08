@@ -25,7 +25,7 @@ const Posts = ({ allPostsData }) => (
 
       <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, title }) => (
             <GridItem
               key={id}
               title={title}
