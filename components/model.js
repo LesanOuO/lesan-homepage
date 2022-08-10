@@ -9,7 +9,7 @@ function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4))
 }
 
-const VoxelDog = () => {
+const Model = () => {
   const refContainer = useRef()
   const [loading, setLoading] = useState(true)
   const [renderer, setRenderer] = useState()
@@ -49,6 +49,7 @@ const VoxelDog = () => {
       renderer.setPixelRatio(window.devicePixelRatio)
       renderer.setSize(scW, scH)
       renderer.outputEncoding = THREE.sRGBEncoding
+      console.log('render111')
       container.appendChild(renderer.domElement)
       setRenderer(renderer)
 
@@ -114,7 +115,6 @@ const VoxelDog = () => {
       }
 
       return () => {
-        console.log('unmount')
         cancelAnimationFrame(req)
         renderer.dispose()
       }
@@ -135,4 +135,4 @@ const VoxelDog = () => {
   )
 }
 
-export default VoxelDog
+export default Model

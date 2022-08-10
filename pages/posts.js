@@ -1,7 +1,7 @@
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
+import { PostGridItem } from '../components/grid-item'
 
 import { getRandomNum } from '../lib/utils'
 import { getSortedPostsData } from '../lib/posts'
@@ -25,7 +25,8 @@ const Posts = ({ allPostsData }) => (
       <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           {allPostsData.map(({ id, title }) => (
-            <GridItem
+            <PostGridItem
+              id={id}
               key={id}
               title={title}
               thumbnail={'/images/background/' + getRandomNum(1, 5) + '.jpg'}
