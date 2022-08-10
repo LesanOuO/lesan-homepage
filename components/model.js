@@ -49,7 +49,6 @@ const Model = () => {
       renderer.setPixelRatio(window.devicePixelRatio)
       renderer.setSize(scW, scH)
       renderer.outputEncoding = THREE.sRGBEncoding
-      console.log('render111')
       container.appendChild(renderer.domElement)
       setRenderer(renderer)
 

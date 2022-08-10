@@ -10,22 +10,24 @@ if (typeof window !== 'undefined') {
 
 function Website({ Component, pageProps, router }) {
   return (
-    <Chakra>
-      <Fonts />
-      <Layout router={router}>
-        <AnimatePresence
-          exitBeforeEnter
-          initial={true}
-          onExitComplete={() => {
-            if (typeof window !== 'undefined') {
-              window.scrollTo({ top: 0 })
-            }
-          }}
-        >
-          <Component {...pageProps} key={router.route} />
-        </AnimatePresence>
-      </Layout>
-    </Chakra>
+    <>
+      <Chakra>
+        <Fonts />
+        <Layout router={router}>
+          <AnimatePresence
+            exitBeforeEnter
+            initial={true}
+            onExitComplete={() => {
+              if (typeof window !== 'undefined') {
+                window.scrollTo({ top: 0 })
+              }
+            }}
+          >
+            <Component {...pageProps} key={router.route} />
+          </AnimatePresence>
+        </Layout>
+      </Chakra>
+    </>
   )
 }
 
