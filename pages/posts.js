@@ -3,7 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { PostGridItem } from '../components/grid-item'
 
-import { getRandomNum } from '../lib/utils'
+// import { getRandomNum } from '../lib/utils'
 import { getSortedPostsData } from '../lib/posts'
 
 export async function getStaticProps() {
