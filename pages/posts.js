@@ -29,7 +29,7 @@ const Posts = ({ allPostsData }) => (
               id={id}
               key={id}
               title={title}
-              thumbnail={'https://api.yimian.xyz/img'}
+              thumbnail={'https://www.dmoe.cc/random.php'}
               href={`/posts/${id}`}
             />
           ))}
