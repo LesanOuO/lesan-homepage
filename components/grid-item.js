@@ -50,7 +50,7 @@ export const PostGridItem = ({ children, id, title, thumbnail }) => (
       <LinkBox cursor="pointer">
         <Image
           src={thumbnail}
-          alt={title}
+          alt={""}
           className="grid-item-thumbnail"
           width={200}
           height={110}

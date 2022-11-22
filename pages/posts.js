@@ -29,7 +29,7 @@ const Posts = ({ allPostsData }) => (
               id={id}
               key={id}
               title={title}
-              thumbnail={'/images/background/' + getRandomNum(1, 5) + '.jpg'}
+              thumbnail={'https://api.yimian.xyz/img'}
               href={`/posts/${id}`}
             />
           ))}

@@ -41,7 +41,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Lesan
           </Heading>
-          <p>Digital Craftzman ( Developer / Designer ) </p>
+          <p>Full Stack developer </p>
         </Box>
         <Box
           flexShrink={0}
@@ -102,7 +102,7 @@ const Home = () => (
           Graduated from the university, Shanghai.
         </BioSection>
         <BioSection>
-          <BioYear>2017 to present</BioYear>
+          <BioYear>2021 to present</BioYear>
           Worked at GREE, China.
         </BioSection>
       </Section>

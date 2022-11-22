@@ -1,9 +1,9 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading } from '@chakra-ui/react' //, SimpleGrid, Divider
 import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
+// import Section from '../components/section'
+// import { WorkGridItem } from '../components/grid-item'
 
-import { getRandomNum } from '../lib/utils'
+// import { getRandomNum } from '../lib/utils'
 
 const Works = () => (
   <Layout title="Works">
@@ -12,7 +12,11 @@ const Works = () => (
         Works
       </Heading>
 
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+      <Heading as="h5" fontSize={16} mt={10} mb={10}>
+        In progress ~ 😁
+      </Heading>
+
+      {/* <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem
             id="inkdrop"
@@ -32,15 +36,15 @@ const Works = () => (
             Music recommendation app for iOS
           </WorkGridItem>
         </Section>
-      </SimpleGrid>
+      </SimpleGrid> */}
 
-      <Section delay={0.2}>
+      {/* <Section delay={0.2}>
         <Divider my={6} />
 
         <Heading as="h3" fontSize={20} mb={4}>
           Collaborations
         </Heading>
-      </Section>
+      </Section> */}
     </Container>
   </Layout>
 )
